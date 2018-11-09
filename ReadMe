@@ -1,0 +1,25 @@
+# This is a rocks-db bench mark test wrote in Rust lange.
+## How to build it?
+> Install Rust in your PC. In the source code dir run cargo build --release
+
+## How to run it?
+> In the target/release dir, run the test by:
+"Usage Example:
+Init token system by executing:
+> token_poc init-super [your_super_account_id] [total_supply]
+Transfer tokens from one to another accounts by executing:
+> token_poc transfer [from] [to] [amount]
+Get balance of an anccount by executing:
+> token_poc balance [address]
+Start bench mark by rolling out amount of tokens to amount of accounts by executing:
+> token_poc bench [I/O] [amount of account] [amount of tokens per account]
+Note: for better performance, please build binary in release mode.
+
+where:
+    [your_super_account_id] Hash id of your account adrress, can be anything in string.
+    [total_supply] The total supply of your tokens, for example: 50000000000
+    [from] Sender's address, for example super account's address.
+    [to] Receiver's address, for any end user's account address.
+    [amount] Number of tokens need to be transfered in the transaction.
+    [address] Account address in string.
+    [I/O] I | O | IO, command to write | read | write & read balance during the bench test."
