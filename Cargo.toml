@@ -1,0 +1,13 @@
+[package]
+name = "rocksdb_poc"
+version = "0.1.0"
+authors = ["jason.chen"]
+
+[dependencies]
+exonum_rocksdb = "0.7.4"
+bincode = "0.6"
+tempdir = "0.3.7"
+
+[lib]
+name = "rocksdb_poc"
+path = "src/lib.rs"
